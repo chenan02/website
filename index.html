@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Andrew Chen</title>
+	<link href="style.css" rel="stylesheet"></link>
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- script src -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+    $(document).ready(function (){
+        $("#about").click(function (){
+            $('html, body').animate({
+                scrollTop: $(".background2").offset().top
+           }, 2000);
+        });
+        $("#projects").click(function (){
+            $("html, body").animate({
+              scrollTop: $(".background3").offset().top
+            }, 2000);
+        });
+        $("#contact").click(function(){
+            $("html, body").animate({
+                scrollTop: $(".background4").offset().top
+            }, 2000);
+        });
+    });
+    </script>
+    </head>
+<body>
+    <div class="navbar">
+			<!-- outside div for omniprescence? -->
+			<!--<div id="top" class="navbutton">
+				<p>top</p>
+			</div>-->
+            <div id="contact" class="navbutton">
+                <p>contact</p>
+            </div>
+            <div id="projects" class="navbutton">
+                <p>projects</p>
+            </div>
+			<div id="about" class="navbutton">
+                <p>about</p>
+            </div>
+		</div>
+	<div class="background1">
+		<!--<img src="http://thumbs.imagekind.com/3856091_650/Downtown-Ann-Arbor--BlackAndWhite_art.jpg">-->
+		<!-- time lapse? -->
+		<div id="welcome">
+			<h1>Welcome.</h1>
+		</div>
+	</div>
+	<div class="background2">
+        <div id="wrapper">
+            <div id ="wrappertop">
+                <img id="me" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/8/005/0a1/040/3ae5134.jpg">
+            </div>
+            <div id="wrapperbottom">
+                <div id="abouttext">
+                    <h1>About</h1>
+                    <p>Hey there! My name is Andrew Chen. Let's talk about web development!</p>
+                </div>
+                <div id="resume" onclick="location.href='http://www-personal.umich.edu/~anchen/achen_resume.pdf'">
+                <p style="color:white">resume</p>
+                </div>
+            </div>
+        </div> 
+   <!--     <img src="https://amitchellcreative.files.wordpress.com/2013/06/crisler_center_night_black_and_white.jpg">  -->
+            <!-- put div over name -->
+    </div>
+    <div class="background3">
+     <!--   <img src="https://amitchellcreative.files.wordpress.com/2013/06/stadium_blvd_bridge_night_black_and_white.jpg">  -->
+        <div id="projectswrapper">
+            <h1>Projects</h1>
+        </div>
+        <div id="Findr">
+            <p>Findr</p>
+            <br>
+            <p>A web app where users can post and find cool stuff going on in the area.</p>
+            <br>
+            <p>PHP/MySQL</p>
+        </div>
+        <div id="Chatr">
+            <p>Chatr</p>
+            <br>
+            <p>A location-based, anonymous chatting web app that connects people due to personalities.</p>
+            <br>
+            <p>MEAN</p>
+        </div>
+    </div>
+    <div class="background4">
+     <!--   <img src="http://fineartamerica.com/images-medium-5/1-ann-arbor-nights-pat-cook.jpg">  -->
+        <div id="followme">
+            <h1>Follow me!</h1>
+        </div>
+        <div id="iconcontainer">
+            <a href="mailto:anchen@umich.edu">
+                <i class="fa fa-envelope-o fa-5x"></i>
+            </a>
+            <a href="http://www.facebook.com/weiandyyo">
+                <i class="fa fa-facebook-official fa-5x"></i>
+            </a>
+            <a href="http://www.linkedin.com/in/chenan02">
+                <i class="fa fa-linkedin fa-5x"></i>
+            </a>
+            <a href="http://www.twitter.com/weiandyy">
+                <i class="fa fa-twitter fa-5x"></i>
+            </a>
+            <a href="http://www.pinterest.com/weiandyy">
+                <i class="fa fa-pinterest fa-5x"></i>
+            </a>
+            <a href="http://www.github.com/chenan02">
+                <i class="fa fa-github fa-5x"></i>
+            </a>
+            <a href="http://www.weiandyy.tumblr.com">
+                <i class="fa fa-tumblr fa-5x"></i>
+            </a>
+        </div>
+	</div>
+    
+   <!-- <script>
+    $(document).ready(function(){
+        $("#about").on("click",function() {
+            $("html","body").animate({
+                //scrollTop: $("#background2").offset().top
+                scrollTop: 300
+            }, 700);
+        });
+    }
+        $(document).ready(function() {
+            $('#background2').hide();
+            $('#about').click(function() {
+                $('#background2').show();
+                $('body').animate({
+                    scrollTop: $('background2')[0].scrollHeight
+                }, 500);
+            });
+            $('#background3').hide();
+            $('#contact').click(function() {
+                $('background3').show();
+                $('body').animate({
+                    scrollTop: $('background3')[0].scrollHeight
+                }, 500);
+            });
+        });*/
+    </script>
+-->
+</body>
+</html>

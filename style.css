@@ -1,0 +1,317 @@
+<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    font-family: "Droid Sans Mono";
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.background1 {
+	position: relative;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	display: block;
+    background: rgb(232, 67, 50);
+}
+
+.background1 img {
+	position: absolute;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	/*opacity: 0.5;*/
+}
+
+#welcome {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+	z-index: 2;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	height: 59px;
+	width: 100%;
+	background: rgb(255,148,68);
+    z-index: 10000;
+}
+
+.navbutton {
+	vertical-align: middle;
+	font-size: 16px;
+	float: right;
+	height: 100%;
+	width: 100px;
+	text-align: center;
+	display: inline-block;
+	margin: auto;
+    cursor: pointer;
+}
+
+.navbutton:hover {
+    background-color: white;
+    
+}
+
+#about p {
+    vertical-align: middle;
+}
+
+#contact p {
+    vertical-align: middle;
+}
+
+.top {
+    width: 100px;
+    height:130px;
+	padding:10px; 
+	text-align:center; 
+	background: whiteSmoke;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	position:fixed;
+	top:75px;
+	right:40px;
+	display:none;
+	background: url('arrow_up.png') no-repeat 0px 20px;
+}
+.top {
+    text-decoration: none;
+}
+/*
+#top p {
+	vertical-align: middle;
+}
+*/
+.background2 {
+    position: relative;
+    background-size: cover;
+	display: block;
+    height: 100vh;
+    width: 100%;
+    background: rgb(139,62,232);
+}
+
+.background2 img {
+	/*background-image: url("https://amitchellcreative.files.wordpress.com/2013/06/crisler_center_night_black_and_white.jpg");*/
+	position: relative;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	/*opacity: 0.5;*/
+}
+
+#wrapper {
+    position: absolute;
+    display: inline-block;
+    width: 800px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#wrappertop {
+    position: relative;
+    display: table;
+    height: 60%;
+    width: 100%;
+}
+
+#me {
+    top: 30%;
+    border-radius: 300px;
+    display: block;
+    height: 300px;
+    width: 300px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3;
+    
+}
+
+#wrapperbottom {
+    position: relative;
+    top: 50%;
+    height: 25%;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#abouttext {
+    <!--background-color: black;-->
+    position: relative;
+    text-align: center;
+    left: auto;
+    right: auto;
+    z-index: 1;
+}
+
+#resume {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+    top: 150px;
+    width: 100px;
+    margin: 0 auto;
+    border-style: solid;
+}
+
+.background3 {
+    position: relative;
+    background-size: cover;
+	display: block;
+    height: 100vh;
+    width: 100%;
+    background: rgb(68,99,255);
+}
+
+.background3 img {
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#projectswrapper {
+    position: absolute;
+    height: 15%;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#Findr {
+    position: absolute;
+    height: 75%;
+    width: 35%;
+    color: white;
+    margin-left: 10%;
+    top: 35%;
+    text-align: center;
+}
+
+#Chatr { 
+    right: 10%;
+    position: absolute;
+    height: 75%;
+    width: 35%;
+    color: white;
+    top: 35%;
+    text-align: center;
+}
+
+.background4 {
+    position: relative;
+	background: rgb(255,68,226);
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+    
+}
+.background4 img {
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+    /*opacity: 0.2;*/
+}
+
+#followme {
+    position: absolute;
+    height: 15%;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#iconcontainer {
+    text-align: center;
+    width: 300px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    height: 50%;
+    width: 70%;
+}
+
+.parallelogram {
+    width: 150px;
+	height: 100px;
+	-webkit-transform: skew(20deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+}
+
+.parallelogram>img {
+    -webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-20deg);
+	     -o-transform: skew(-20deg);
+   max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.fa {
+    margin-right: 20px;
+}
+
+#facebook {
+    background: #3B579D;
+}
+
+#linkedin {
+    background: #0274B3;
+}
+
+#twitter {
+    background: #28A9E2;
+    
+}
+
+#pinterest {
+    background: #FF0000;
+}
+
+#github {
+    background: #FFFFFF;
+}
+
+#tumblr {
+}
+
+</style>
