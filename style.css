@@ -181,6 +181,7 @@ a {
     height: 100vh;
     width: 100%;
     background: rgb(68,99,255);
+	overflow: auto;
 }
 
 #projectswrapper {
