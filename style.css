@@ -24,14 +24,6 @@ a {
     background: rgb(232, 67, 50);
 }
 
-.background1 img {
-	position: absolute;
-	background-size: cover;
-	width: 100%;
-	height: 100vh;
-	/*opacity: 0.5;*/
-}
-
 #welcome {
 	position: absolute;
 	top: 50%;
@@ -61,12 +53,11 @@ a {
 	text-align: center;
 	display: inline-block;
 	margin: auto;
-    cursor: pointer;
 }
 
 .navbutton:hover {
     background-color: white;
-    
+	cursor: pointer;
 }
 
 #about p {
@@ -95,11 +86,7 @@ a {
 .top {
     text-decoration: none;
 }
-/*
-#top p {
-	vertical-align: middle;
-}
-*/
+
 .background2 {
     position: relative;
     background-size: cover;
@@ -107,15 +94,6 @@ a {
     height: 100vh;
     width: 100%;
     background: rgb(139,62,232);
-}
-
-.background2 img {
-	/*background-image: url("https://amitchellcreative.files.wordpress.com/2013/06/crisler_center_night_black_and_white.jpg");*/
-	position: relative;
-	background-size: cover;
-	width: 100%;
-	height: 100vh;
-	/*opacity: 0.5;*/
 }
 
 #wrapper {
@@ -195,13 +173,6 @@ a {
     background: rgb(68,99,255);
 }
 
-.background3 img {
-    position: absolute;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-}
-
 #projectswrapper {
     position: absolute;
     height: 15%;
@@ -267,27 +238,6 @@ a {
     top: 50%;
     height: 50%;
     width: 70%;
-}
-
-.parallelogram {
-    width: 150px;
-	height: 100px;
-	-webkit-transform: skew(20deg);
-	   -moz-transform: skew(20deg);
-	     -o-transform: skew(20deg);
-}
-
-.parallelogram>img {
-    -webkit-transform: skew(-20deg);
-	   -moz-transform: skew(-20deg);
-	     -o-transform: skew(-20deg);
-   max-height: 100%;
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
 }
 
 .fa {
