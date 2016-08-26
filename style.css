@@ -182,6 +182,10 @@ a {
     border-style: solid;
 }
 
+#resume:hover {
+	cursor: pointer;
+}
+
 .background3 {
     position: relative;
     background-size: cover;
