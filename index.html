@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Andrew Chen</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
 	<link href="style.css" rel="stylesheet"></link>
     <link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -9,23 +11,25 @@
     <script src="script.js"></script>
     </head>
 <body>
-    <div class="navbar">
-		<div id="contact" class="navbutton">
-			<p>contact</p>
-		</div>
-		<div id="projects" class="navbutton">
-			<p>projects</p>
-		</div>
-		<div id="about" class="navbutton">
-			<p>about</p>
-		</div>
-	</div>
-	<div class="background1">
+    <nav class="navbar navbar-fixed-top">
+		<ul class="nav navbar-nav navbar-right">
+			<li id="contact" class="nav-item">
+				<p class="nav-link">contact</p>
+			</li>
+			<li id="projects" class="nav-item">
+				<p class="nav-link">projects</p>
+			</li>
+			<li id="about" class="nav-item">
+				<p class="nav-link">about</p>
+			</li>
+		</ul>
+	</nav>
+	<div id="background1" class="container-fluid">
 		<div id="welcome">
 			<h1>Welcome.</h1>
 		</div>
 	</div>
-	<div class="background2">
+	<div id="background2" class="container-fluid">
         <div id="wrapper">
             <div id ="wrappertop">
                 <img id="me" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/8/005/0a1/040/3ae5134.jpg">
@@ -33,34 +37,59 @@
             <div id="wrapperbottom">
                 <div id="abouttext">
                     <h1>About</h1>
-                    <p>Hey there! My name is Andrew Chen. Let's talk about web development!</p>
+					<br>
+                    <p>Hey there! My name is Andrew. Let's talk web development!</p>
                 </div>
                 <div id="resume" onclick="location.href='http://www-personal.umich.edu/~anchen/achen_resume.pdf'">
                 <p style="color:white">resume</p>
                 </div>
             </div>
         </div> 
-    </div>
-    <div class="background3">
+	</div>
+	<div id="background3" class="container-fluid">
         <div id="projectswrapper">
             <h1>Projects</h1>
-        </div>
-        <div id="Findr">
-            <p>Findr</p>
-            <br>
-            <p>A web app where users can post and find cool stuff going on in the area.</p>
-            <br>
-            <p>PHP/MySQL</p>
-        </div>
-        <div id="Chatr">
-            <p>Chatr</p>
-            <br>
-            <p>A location-based, anonymous chatting web app that connects people due to personalities.</p>
-            <br>
-            <p>MEAN</p>
-        </div>
+			<br>
+			<div class="container-fluid">
+				<div class="row">
+					<div id="findr" class="col-md-4 offset-md-1 project">
+						<p>Findr</p>
+						<br>
+						<p>A web app where users can post and find cool stuff going on in the area.</p>
+						<br>
+						<p>PHP/MySQL</p>
+					</div>
+					<div id="chatr" class="col-md-4 offset-md-2 project">
+						<p>Chatr</p>
+						<br>
+						<p>A location-based, anonymous chatting web app that connects people due to personalities.</p>
+						<br>
+						<p>MEAN</p>
+					</div>
+				</div>
+				<br>
+				<br>
+				<br>
+				<div class="row">
+					<div id="soapbox" class="col-md-4 offset-md-1 project">
+						<p>Soapbox</p>
+						<br>
+						<p>A web app that sends bite-sized news to your text messages</p>
+						<br>
+						<p>Ruby/Rails</p>
+					</div>
+					<div id="picstack" class="col-md-4 offset-md-2 project">
+						<p>PicStack</p>
+						<br>
+						<p>An anonymous picture-sharing web app</p>
+						<br>
+						<p>MEAN</p>
+					</div>
+				</div>
+			</div>
     </div>
-    <div class="background4">
+	</div>
+	<div id="background4" class="container-fluid">
         <div id="followme">
             <h1>Follow me!</h1>
         </div>
@@ -68,23 +97,14 @@
             <a href="mailto:anchen@umich.edu">
                 <i class="fa fa-envelope-o fa-5x"></i>
             </a>
-            <a href="http://www.facebook.com/weiandyyo">
-                <i class="fa fa-facebook-official fa-5x"></i>
-            </a>
             <a href="http://www.linkedin.com/in/chenan02">
                 <i class="fa fa-linkedin fa-5x"></i>
             </a>
             <a href="http://www.twitter.com/weiandyy">
                 <i class="fa fa-twitter fa-5x"></i>
             </a>
-            <a href="http://www.pinterest.com/weiandyy">
-                <i class="fa fa-pinterest fa-5x"></i>
-            </a>
             <a href="http://www.github.com/chenan02">
                 <i class="fa fa-github fa-5x"></i>
-            </a>
-            <a href="http://www.weiandyy.tumblr.com">
-                <i class="fa fa-tumblr fa-5x"></i>
             </a>
         </div>
 	</div>
