@@ -60,6 +60,13 @@ a {
 }
 
 .nav-item {
+	margin-top: -10px;
+	margin-right: -px;
+	height: 60px;
+}
+
+.nav-item > .nav-link {
+	margin-top: 10px;
 }
 
 .nav-item:hover {
@@ -117,7 +124,6 @@ a {
 
 #wrappertop {
     position: relative;
-    display: table;
     height: 60%;
     width: 100%;
 }
@@ -156,12 +162,12 @@ a {
 }
 
 #resume {
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
     text-align: center;
     z-index: 1;
-    top: 160px;
+    top: 15%;
     width: 100px;
     margin: 0 auto;
     border-style: solid;
@@ -172,6 +178,7 @@ a {
 
 #resume:hover {
 	cursor: pointer;
+	background-color: white;
 }
 
 #background3 {
