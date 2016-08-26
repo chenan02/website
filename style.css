@@ -197,6 +197,11 @@ a {
 	text-align: center;
 }
 
+.project:hover {
+	background-color: white;
+	cursor: pointer;
+}
+
 #background4 {
     position: relative;
 	background: rgb(255,68,226);
